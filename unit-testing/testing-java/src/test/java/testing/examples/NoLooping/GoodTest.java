@@ -11,6 +11,8 @@ public class GoodTest {
         return new ExcelSheetColumnIndex().titleToNumber(title);
     }
 
+    // GOOD: all test cases are nice and simple, trivially easy to understand
+
     @Test
     public void test_a() {
         assertEquals(1, titleToNumber("A"));

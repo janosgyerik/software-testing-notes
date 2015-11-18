@@ -11,6 +11,8 @@ public class GoodTest {
         return new ExcelSheetColumnIndex().titleToNumber(title);
     }
 
+    // GOOD: the different cases are correctly separated
+
     @Test
     public void test_a() {
         assertEquals(1, titleToNumber("A"));

@@ -11,6 +11,12 @@ public class BadTest {
         return new ExcelSheetColumnIndex().titleToNumber(title);
     }
 
+    // BAD: test cases should not have complicated code, such as loops.
+    //
+    // Paranoia should have its limits. There's no need to check the
+    // full range of possible inputs. Cover the corner cases,
+    // and pick some interesting cases.
+
     @Test
     public void test_a_to_z() {
         for (int i = 'A'; i < 'Z'; ++i) {

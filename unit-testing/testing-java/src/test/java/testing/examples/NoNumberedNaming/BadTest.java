@@ -11,6 +11,11 @@ public class BadTest {
         return new ExcelSheetColumnIndex().titleToNumber(title);
     }
 
+    // BAD: using numbering in test method names is unacceptable.
+    //
+    // When a test fails, the name of the method in the failure summary
+    // will not help understanding the problem.
+
     @Test
     public void test1() {
         assertEquals(1, titleToNumber("A"));

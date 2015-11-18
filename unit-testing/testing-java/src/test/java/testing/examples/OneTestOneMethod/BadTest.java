@@ -11,6 +11,11 @@ public class BadTest {
         return new ExcelSheetColumnIndex().titleToNumber(title);
     }
 
+    // BAD: one method should test only one thing
+    //
+    // When a test fails, the failure summary
+    // will not help understanding the problem.
+
     @Test
     public void test_a_bunch_of_things() {
         assertEquals(1, titleToNumber("A"));

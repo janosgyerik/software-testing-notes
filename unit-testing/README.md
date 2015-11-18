@@ -32,6 +32,34 @@ Good opportunities for adding unit tests in existing/legacy projects:
   2. Refactor, re-running the tests to track your progress
   3. Confirm that all tests pass.
 
+## Testing tools in Java
+
+- Testing: JUnit vs TestNG vs others -> use JUnit4
+  + JUnit is built into all modern IDEs. 
+  + Sure it lacks some advanced features. But the best tests are simple.
+    If you need advanced features, your design might be fishy.
+  + Use version 4, not 3.
+
+- Mocking: Mockito vs PowerMock -> use Mockito
+  + Mockito is simple, easy to use, ergonomic
+  + Sure it lacks some advanced features. But the best code is simple.
+    If you need advanced features, your design might be fishy.
+
+## Organizing test code in Maven projects
+
+- Test code goes in `src/test/java`
+- Test classes should have the same package structure as the classes under test
+
+## Naming
+
+- Classes: test classes should use the same name as the class under test with a `Test` suffix
+  + Maven ignores test classes that don't end with `Test`
+
+- Methods: use long, descriptive names, with underscores separating words
+  + Yes this conflicts with the JLS naming convention of production code.
+    Test code is not production code. It's also not API: test methods
+    are only called by the testing framework.
+
 ## Examples
 
 See the included Java project (testing-java, import with Maven).

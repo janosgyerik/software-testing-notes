@@ -1,6 +1,6 @@
 package testing.common;
 
-public class ExcelSheetColumnIndex {
+public class ExcelSheetUtils {
     /**
      * Convert an Excel sheet column title to numeric index.
      *

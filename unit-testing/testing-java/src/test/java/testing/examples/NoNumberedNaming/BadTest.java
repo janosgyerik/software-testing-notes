@@ -1,14 +1,14 @@
 package testing.examples.NoNumberedNaming;
 
 import org.junit.Test;
-import testing.common.ExcelSheetColumnIndex;
+import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 
 public class BadTest {
 
     private int titleToNumber(String title) {
-        return new ExcelSheetColumnIndex().titleToNumber(title);
+        return new ExcelSheetUtils().titleToNumber(title);
     }
 
     // BAD: using numbering in test method names is unacceptable.

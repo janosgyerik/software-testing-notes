@@ -1,4 +1,4 @@
-package testing.examples.NoNumberedNaming;
+package testing.common;
 
 public class ExcelSheetColumnIndex {
     /**

@@ -1,6 +1,11 @@
 package testing.common;
 
 public class ExcelSheetUtils {
+
+    private ExcelSheetUtils() {
+        throw new AssertionError("utility class, forbidden constructor");
+    }
+
     /**
      * Convert an Excel sheet column title to numeric index.
      *

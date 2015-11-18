@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class BadTest {
 
     private int titleToNumber(String title) {
-        return new ExcelSheetUtils().titleToNumber(title);
+        return ExcelSheetUtils.titleToNumber(title);
     }
 
     // BAD: using numbering in test method names is unacceptable.

@@ -15,7 +15,7 @@ public class ExcelSheetUtils {
      * @param title The title to convert
      * @return The numeric index corresponding to the title
      */
-    public int titleToNumber(String title) {
+    public static int titleToNumber(String title) {
         int number = 0;
         int len = title.length();
         for (int pos = 0; pos < len; ++pos) {

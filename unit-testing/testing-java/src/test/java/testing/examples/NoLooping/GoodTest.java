@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class GoodTest {
 
     private int titleToNumber(String title) {
-        return new ExcelSheetUtils().titleToNumber(title);
+        return ExcelSheetUtils.titleToNumber(title);
     }
 
     // GOOD: all test cases are nice and simple, trivially easy to understand

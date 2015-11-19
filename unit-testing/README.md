@@ -2,21 +2,52 @@
 
 Common principles, examples, DOs and DONTs.
 
-## Why should you write unit test?
-
-The only sensible way to develop software is to write tests first.
+## Why should you write unit test at all?
 
 - How do you know your code actually works without running tests?
   + You don't. You need to test. And re-test. Again and again.
-- Repeated manual testing is so inconvenient that programmers tend to skip it and just cross fingers and "hope for the best"
-- Re-running automated tests is a nobrainer. It's easy, fast, satisfying, and a huge relief.
-  + If you have them.
 
-## Automate running the tests
+- Repeating manual tests is extremely inconvenient.
+  Manual testing leads to skipping some steps due to laziness.
+  It's a real hazard, leading to releasing not fully tested code.
 
-- The complete test suite must be runnable from the command line. Know how to do it.
-- Re-run the unit tests on every push.
-- Never skip the tests. If the tests are not running, you are unprotected from regressions.
+- Re-running automated tests is a nobrainer. It's easy, fast, highly satisfying, huge relief, great comfort.
+
+## Why should you write unit tests first before code?
+
+Writing tests first is the only sensible way to develop software.
+
+- By writing tests first, you ensure testability
+  + It's typically hard to add tests later
+
+- By writing tests first, you ensure loose coupling
+  + Tightly coupled code is hard to test. Writing the tests first precludes tight coupling
+
+## A simple action plan
+
+The following steps are targeted at teams that don't yet have the good habit of writing tests.
+The steps are intentionally in a specific order that should be straightforward to follow.
+Never skip the tests. If the tests are not running, you are unprotected from regressions.
+
+Baseline: the bare minimum to have sanity
+
+- Setup continuous integration (automated builds, triggered by every commit or push)
+- Make sure that tests are executed as part of continuous integration
+  + If tests are disabled, enable them. If you cannot enable them because they are broken, then fix them
+
+Next level: create good habits
+
+- Have each team member implement one test. Right now. Code review each other, referencing the examples in this project
+- Have each team member implement one test per week. Regularity is crucial.
+  + Ensure regularity by designating a testing day, early in the week
+- Gamify it: for example, create some sort of dashboard, showing the history of testing activity of your team members, and the test coverage of the project
+
+Next level: test driven development tdd
+
+- The only sane way to develop software
+- Guarantees shorter schedules: the time invested in writing the tests is saved many times over through the time you don't have to spend on debugging and painful regressions and bugfix releases
+- Guarantees testable code
+- Guarantees easier and safer future evolutions
 
 ## Adding unit tests in existing/legacy projects
 

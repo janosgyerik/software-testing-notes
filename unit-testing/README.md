@@ -93,4 +93,10 @@ Good opportunities for adding unit tests in existing/legacy projects:
 
 ## Examples
 
+The of the examples is to answer questions like:
+
+- What makes a unit test good or bad?
+- How to write good tests?
+- How to rewrite bad tests to make them good?
+
 See the included Java project (testing-java, import with Maven).

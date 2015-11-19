@@ -100,3 +100,23 @@ The of the examples is to answer questions like:
 - How to rewrite bad tests to make them good?
 
 See the included Java project (testing-java, import with Maven).
+
+- [ ] [The test case should make the causes and effects perfectly clear](testing-java/src/test/java/testing/examples/ClearCauseAndEffect)
+- [ ] [Test cases should be simple](testing-java/src/test/java/testing/examples/Simple)
+- [ ] [Test cases should be short](testing-java/src/test/java/testing/examples/Short)
+- [x] [Test cases should be fast](testing-java/src/test/java/testing/examples/Fast)
+- [x] [A test method should test one thing](testing-java/src/test/java/testing/examples/OneTestOneMethod)
+- [x] [Don't use numbering in test case names](testing-java/src/test/java/testing/examples/NoNumberedNaming)
+- [ ] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
+- [x] [Test cases should be easy to read and understand](testing-java/src/test/java/testing/examples/EasyToRead)
+- [ ] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
+- [ ] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
+- [ ] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
+- [ ] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)
+- [ ] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
+- [ ] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
+- [ ] [Test cases should not have side effects](testing-java/src/test/java/testing/examples/NoSideEffects)
+- [ ] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)
+- [x] [Test cases should not rely on the local filesystem](testing-java/src/test/java/testing/examples/NoLocalData)
+- [x] [Test cases should not have loops or complex logic](testing-java/src/test/java/testing/examples/NoLooping)
+- [x] [Don't print in test cases](testing-java/src/test/java/testing/examples/NoPrinting)

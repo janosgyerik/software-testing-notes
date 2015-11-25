@@ -13,7 +13,10 @@ public class BadTest {
 
     // BAD: not easy to read or understand. Test cases should be simple, easy to read.
     //
-    // In general, there shouldn't be logic in tests.
+    // The magic numbers are hard to read.
+    // The loop logic is hard to read.
+    //
+    // In general, there shouldn't be non-trivial logic in tests, and no loops.
     // Test cases should contain simple, straightforward assertions.
 
     @Test

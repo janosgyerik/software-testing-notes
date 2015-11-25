@@ -1,4 +1,4 @@
-package testing.examples.EasyToRead;
+package testing.examples.NotEnoughTesting;
 
 import org.junit.Test;
 import testing.common.ExcelSheetUtils;

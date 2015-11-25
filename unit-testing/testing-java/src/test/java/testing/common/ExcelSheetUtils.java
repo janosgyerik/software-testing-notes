@@ -21,11 +21,17 @@ public class ExcelSheetUtils {
      * @return The numeric index corresponding to the title
      */
     public static int titleToNumber(String title) {
+        if (!title.matches("[A-Z]+")) {
+            throw new IllegalArgumentException("Invalid title: should be capital letters");
+        }
         int number = 0;
         int len = title.length();
         for (int pos = 0; pos < len; ++pos) {
             number *= 26;
             number += title.charAt(pos) - 'A' + 1;
+            if (number < 0) {
+                throw new IllegalArgumentException("Invalid title: too large, integer overflow detected");
+            }
         }
         return number;
     }

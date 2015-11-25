@@ -5,22 +5,24 @@ import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 
-public class GoodTest {
+public class BadTest {
 
     private int titleToNumber(String title) {
         return ExcelSheetUtils.titleToNumber(title);
     }
 
-    // GOOD: the logic between the inputs and expected outputs is clear
+    // BAD: the logic between the inputs and expected outputs is NOT clear.
+    // Why is the index of AA 27?
+    // Why is the index of BB 54?
 
     @Test
     public void test_aa() {
-        assertEquals(26 + 1, titleToNumber("AA"));
+        assertEquals(27, titleToNumber("AA"));
     }
 
     @Test
     public void test_bb() {
-        assertEquals(2 * 26 + 2, titleToNumber("BB"));
+        assertEquals(54, titleToNumber("BB"));
     }
 
 }

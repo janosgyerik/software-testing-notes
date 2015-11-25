@@ -101,7 +101,7 @@ The of the examples is to answer questions like:
 
 See the included Java project (testing-java, import with Maven).
 
-- [ ] [The test case should make the causes and effects perfectly clear](testing-java/src/test/java/testing/examples/ClearCauseAndEffect)
+- [x] [The test case should make the causes and effects perfectly clear](testing-java/src/test/java/testing/examples/ClearCauseAndEffect)
 - [ ] [Test cases should be simple](testing-java/src/test/java/testing/examples/Simple)
 - [ ] [Test cases should be short](testing-java/src/test/java/testing/examples/Short)
 - [x] [Test cases should be fast](testing-java/src/test/java/testing/examples/Fast)

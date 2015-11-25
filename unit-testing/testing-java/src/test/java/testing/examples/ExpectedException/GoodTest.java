@@ -11,26 +11,12 @@ public class GoodTest {
         return ExcelSheetUtils.titleToNumber(title);
     }
 
-    // GOOD: all test cases are nice and simple, trivially easy to understand
+    // GOOD: using `expected = ` to verify that an exception will be thrown,
+    // and simply making a call that will trigger the exception,
+    // no need to store the result in a local variable
 
-    @Test
-    public void test_a() {
-        assertEquals(1, titleToNumber("A"));
+    @Test(expected = IllegalArgumentException.class)
+    public void test_empty_throws() {
+        titleToNumber("");
     }
-
-    @Test
-    public void test_z() {
-        assertEquals(26, titleToNumber("Z"));
-    }
-
-    @Test
-    public void test_aa() {
-        assertEquals(27, titleToNumber("AA"));
-    }
-
-    @Test
-    public void test_bb() {
-        assertEquals(54, titleToNumber("BB"));
-    }
-
 }

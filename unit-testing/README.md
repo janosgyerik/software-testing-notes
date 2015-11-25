@@ -114,7 +114,7 @@ See the included Java project (testing-java, import with Maven).
 - [x] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
 - [x] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)
 - [ ] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
-- [ ] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
+- [x] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
 - [ ] [Test cases should not have side effects](testing-java/src/test/java/testing/examples/NoSideEffects)
 - [ ] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)
 - [x] [Test cases should not rely on the local filesystem](testing-java/src/test/java/testing/examples/NoLocalData)

@@ -17,9 +17,11 @@ public class BadTest {
     // Test cases should contain simple, straightforward assertions.
 
     @Test
-    public void test_a_to_z() {
-        for (int i = 'A'; i < 'Z'; ++i) {
-            assertEquals(1 + i - 'A', titleToNumber("" + (char) i));
+    public void test_titleToNumber() {
+        for (int i = 65; i < 90; ++i) {
+            assertEquals(1 + i - 65, titleToNumber("" + (char) i));
+            assertEquals(26 + 1 + i - 65, titleToNumber("A" + (char) i));
+            assertEquals(19006 + 1 + i - 65, titleToNumber("ABC" + (char) i));
         }
     }
 }

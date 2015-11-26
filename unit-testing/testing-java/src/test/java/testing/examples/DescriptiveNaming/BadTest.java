@@ -5,36 +5,35 @@ import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 
-public class GoodTest {
+public class BadTest {
 
     private int titleToNumber(String title) {
         return ExcelSheetUtils.titleToNumber(title);
     }
 
-    // GOOD: the method names give a good idea what is being tested.
+    // BAD: the test cases are poorly named.
+    // They don't help understanding what is being tested.
+    //
+    // When a test fails, the name of the method in the failure summary
+    // will not help understanding the problem.
 
     @Test(expected = IllegalArgumentException.class)
-    public void test_empty_throws() {
-        titleToNumber("");
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void test_invalid_throws() {
+    public void test_error() {
         titleToNumber("$");
     }
 
     @Test
-    public void test_a_is_1() {
+    public void test1() {
         assertEquals(1, titleToNumber("A"));
     }
 
     @Test
-    public void test_z_is_26() {
+    public void test2() {
         assertEquals(26, titleToNumber("Z"));
     }
 
     @Test
-    public void test_aa_is_27() {
+    public void test3() {
         assertEquals(27, titleToNumber("AA"));
     }
 

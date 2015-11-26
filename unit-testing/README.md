@@ -107,7 +107,7 @@ See the included Java project (testing-java, import with Maven).
 - [x] [Test cases should be fast](testing-java/src/test/java/testing/examples/Fast)
 - [x] [A test method should test one thing](testing-java/src/test/java/testing/examples/OneTestOneMethod)
 - [x] [Don't use numbering in test case names](testing-java/src/test/java/testing/examples/NoNumberedNaming)
-- [ ] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
+- [x] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
 - [x] [Test cases should be easy to read and understand](testing-java/src/test/java/testing/examples/EasyToRead)
 - [ ] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
 - [ ] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)

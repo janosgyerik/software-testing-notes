@@ -27,11 +27,11 @@ public class ExcelSheetUtils {
         int number = 0;
         int len = title.length();
         for (int pos = 0; pos < len; ++pos) {
-            number *= 26;
-            number += title.charAt(pos) - 'A' + 1;
-            if (number < 0) {
+            if (number > Integer.MAX_VALUE / 26) {
                 throw new IllegalArgumentException("Invalid title: too large, integer overflow detected");
             }
+            number *= 26;
+            number += title.charAt(pos) - 'A' + 1;
         }
         return number;
     }

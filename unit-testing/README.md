@@ -113,7 +113,7 @@ See the included Java project (testing-java, import with Maven).
 - [ ] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
 - [x] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
 - [x] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)
-- [ ] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
+- [x] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
 - [x] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
 - [ ] [Test cases should not have side effects](testing-java/src/test/java/testing/examples/NoSideEffects)
 - [ ] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)

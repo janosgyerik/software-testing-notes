@@ -11,26 +11,33 @@ public class GoodTest {
         return ExcelSheetUtils.titleToNumber(title);
     }
 
-    // GOOD: all test cases are nice and simple, trivially easy to understand
+    // GOOD: there is no unnecessary duplication in the test cases,
+    // the repeated external call to ExcelSheetUtils.titleToNumber is encapsulated
+    // in a private helper method
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_empty_throws() {
+        titleToNumber("");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_invalid_throws() {
+        titleToNumber("$");
+    }
 
     @Test
-    public void test_a() {
+    public void test_a_is_1() {
         assertEquals(1, titleToNumber("A"));
     }
 
     @Test
-    public void test_z() {
+    public void test_z_is_26() {
         assertEquals(26, titleToNumber("Z"));
     }
 
     @Test
-    public void test_aa() {
+    public void test_aa_is_27() {
         assertEquals(27, titleToNumber("AA"));
-    }
-
-    @Test
-    public void test_bb() {
-        assertEquals(54, titleToNumber("BB"));
     }
 
 }

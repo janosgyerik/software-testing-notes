@@ -116,7 +116,7 @@ See the included Java project (testing-java, import with Maven).
 - [x] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
 - [x] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
 - [ ] [Test cases should not have side effects](testing-java/src/test/java/testing/examples/NoSideEffects)
-- [ ] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)
+- [x] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)
 - [x] [Test cases should not rely on the local filesystem](testing-java/src/test/java/testing/examples/NoLocalData)
 - [x] [Test cases should not have loops or complex logic](testing-java/src/test/java/testing/examples/NoLooping)
 - [x] [Don't print in test cases](testing-java/src/test/java/testing/examples/NoPrinting)

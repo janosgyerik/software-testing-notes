@@ -11,7 +11,7 @@ public class GoodTest {
         return ExcelSheetUtils.titleToNumber(title);
     }
 
-    // GOOD: all test cases are nice and simple, trivially easy to understand
+    // GOOD: all test cases are interesting, non-trivial
 
     @Test
     public void test_a() {
@@ -25,12 +25,12 @@ public class GoodTest {
 
     @Test
     public void test_aa() {
-        assertEquals(27, titleToNumber("AA"));
+        assertEquals(26 + 1, titleToNumber("AA"));
     }
 
     @Test
     public void test_bb() {
-        assertEquals(54, titleToNumber("BB"));
+        assertEquals(26 * 2 + 2, titleToNumber("BB"));
     }
 
 }

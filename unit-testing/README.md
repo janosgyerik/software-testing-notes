@@ -110,7 +110,7 @@ See the included Java project (testing-java, import with Maven).
 - [x] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
 - [x] [Test cases should be easy to read and understand](testing-java/src/test/java/testing/examples/EasyToRead)
 - [ ] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
-- [ ] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
+- [x] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
 - [x] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
 - [x] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)
 - [x] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)

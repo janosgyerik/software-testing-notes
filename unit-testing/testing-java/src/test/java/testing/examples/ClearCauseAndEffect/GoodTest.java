@@ -4,12 +4,9 @@ import org.junit.Test;
 import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class GoodTest {
-
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
 
     // GOOD: the logic between the inputs and expected outputs is clear
 

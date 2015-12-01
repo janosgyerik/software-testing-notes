@@ -4,11 +4,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 import testing.common.ExcelSheetUtils;
 
-public class BadTest {
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
+public class BadTest {
 
     // BAD: printing is not testing, period
     //

@@ -6,17 +6,16 @@ import testing.common.ExcelSheetUtils;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class GoodTest {
 
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
-
-    // GOOD: test data is loaded from the class path
+    // GOOD: test data is loaded from the class path.
     //
     // However, as much as possible, it's best to keep test data
-    // in the test class itself, so that cause and effect are easily visible
+    // in the test class itself, so that cause and effect are easily visible.
+    //
+    // Also, it's not great that the test case has looping.
 
     private static final String TEST_DATA_SHEET_CSV =
             GoodTest.class.getPackage().getName().replaceAll("\\.", "/") + "/data.csv";

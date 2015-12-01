@@ -4,12 +4,9 @@ import org.junit.Test;
 import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class BadTest {
-
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
 
     // BAD: one method should test only one thing
     //

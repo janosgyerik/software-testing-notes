@@ -4,12 +4,9 @@ import org.junit.Test;
 import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class BadTest {
-
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
 
     // BAD: using numbering in test method names is unacceptable.
     //

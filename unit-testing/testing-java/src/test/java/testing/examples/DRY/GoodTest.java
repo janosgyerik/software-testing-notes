@@ -13,7 +13,10 @@ public class GoodTest {
 
     // GOOD: there is no unnecessary duplication in the test cases,
     // the repeated external call to ExcelSheetUtils.titleToNumber is encapsulated
-    // in a private helper method
+    // in a private helper method.
+    //
+    // In this particular example, an even better solution would be
+    // to static import ExcelSheetUtils.titleToNumber
 
     @Test(expected = IllegalArgumentException.class)
     public void test_empty_throws() {

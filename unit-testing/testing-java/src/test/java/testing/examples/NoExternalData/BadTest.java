@@ -7,12 +7,9 @@ import testing.common.ExcelSheetUtils;
 import java.util.Scanner;
 
 import static org.junit.Assert.assertEquals;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class BadTest {
-
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
 
     // BAD: test cases should NOT use data from external sources
     //

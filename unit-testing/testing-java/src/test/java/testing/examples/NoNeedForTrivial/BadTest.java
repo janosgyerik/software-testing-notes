@@ -5,12 +5,9 @@ import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class BadTest {
-
-    private int titleToNumber(String title) {
-        return ExcelSheetUtils.titleToNumber(title);
-    }
 
     // BAD: trivial test cases are noise; a waste of time to read (and write).
     //

@@ -1,14 +1,18 @@
 package testing.examples.Short;
 
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class GoodTest {
 
-    // GOOD: all test cases are nice and simple, trivially easy to understand
+    // GOOD: all test cases are short, nice and simple, trivially easy to understand
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_empty_throws() {
+        titleToNumber("");
+    }
 
     @Test
     public void test_a() {

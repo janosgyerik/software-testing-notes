@@ -103,7 +103,7 @@ See the included Java project (testing-java, import with Maven).
 
 - [x] [The test case should make the causes and effects perfectly clear](testing-java/src/test/java/testing/examples/ClearCauseAndEffect)
 - [x] [Test cases should be simple](testing-java/src/test/java/testing/examples/Simple)
-- [ ] [Test cases should be short](testing-java/src/test/java/testing/examples/Short)
+- [x] [Test cases should be short](testing-java/src/test/java/testing/examples/Short)
 - [x] [Test cases should be fast](testing-java/src/test/java/testing/examples/Fast)
 - [x] [A test method should test one thing](testing-java/src/test/java/testing/examples/OneTestOneMethod)
 - [x] [Don't use numbering in test case names](testing-java/src/test/java/testing/examples/NoNumberedNaming)

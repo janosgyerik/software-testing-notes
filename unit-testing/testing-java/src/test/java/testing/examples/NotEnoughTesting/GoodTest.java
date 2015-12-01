@@ -1,14 +1,28 @@
 package testing.examples.NotEnoughTesting;
 
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class GoodTest {
 
-    // GOOD: all test cases are nice and simple, trivially easy to understand
+    // GOOD: interesting corner cases are covered
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_empty_throws() {
+        titleToNumber("");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_invalid_throws() {
+        titleToNumber("$");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_partly_invalid_throws() {
+        titleToNumber("A$");
+    }
 
     @Test
     public void test_a() {
@@ -22,12 +36,36 @@ public class GoodTest {
 
     @Test
     public void test_aa() {
-        assertEquals(27, titleToNumber("AA"));
+        assertEquals(26 + 1, titleToNumber("AA"));
     }
 
     @Test
-    public void test_bb() {
-        assertEquals(54, titleToNumber("BB"));
+    public void test_az() {
+        assertEquals(26 + 26, titleToNumber("AZ"));
     }
 
+    @Test
+    public void test_ba() {
+        assertEquals(26 + 26 + 1, titleToNumber("BA"));
+    }
+
+    @Test
+    public void test_bz() {
+        assertEquals(26 + 26 + 26, titleToNumber("BZ"));
+    }
+
+    @Test
+    public void test_ca() {
+        assertEquals(26 + 26 + 26 + 1, titleToNumber("CA"));
+    }
+
+    @Test
+    public void test_zzzzzz() {
+        assertEquals(321272406, titleToNumber("ZZZZZZ"));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void test_zzzzzzz_overflows() {
+        titleToNumber("ZZZZZZZ");
+    }
 }

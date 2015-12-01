@@ -109,7 +109,7 @@ See the included Java project (testing-java, import with Maven).
 - [x] [Don't use numbering in test case names](testing-java/src/test/java/testing/examples/NoNumberedNaming)
 - [x] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
 - [x] [Test cases should be easy to read and understand](testing-java/src/test/java/testing/examples/EasyToRead)
-- [ ] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
+- [x] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
 - [x] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
 - [x] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
 - [x] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)

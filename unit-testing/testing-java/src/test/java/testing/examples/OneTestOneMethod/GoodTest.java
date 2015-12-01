@@ -10,6 +10,11 @@ public class GoodTest {
 
     // GOOD: the different cases are correctly separated
 
+    @Test(expected = IllegalArgumentException.class)
+    public void test_empty_throws() {
+        titleToNumber("");
+    }
+
     @Test
     public void test_a() {
         assertEquals(1, titleToNumber("A"));

@@ -2,26 +2,28 @@
 
 Common principles, examples, DOs and DONTs.
 
-## Why should you write unit test at all?
+## Why should you write unit tests at all?
 
 - How do you know your code actually works without running tests?
-  + You don't. You need to test. And re-test. Again and again.
+  + You don't. You need to test. And re-test. Again, and again.
 
 - Repeating manual tests is extremely inconvenient.
   Manual testing leads to skipping some steps due to laziness.
   It's a real hazard, leading to releasing not fully tested code.
 
-- Re-running automated tests is a nobrainer. It's easy, fast, highly satisfying, huge relief, great comfort.
+- Re-running automated tests is a nobrainer. It's easy, fast,
+  highly satisfying, a huge relief, and great comfort.
 
 ## Why should you write unit tests first before code?
 
-Writing tests first is the only sensible way to develop software.
+Writing tests first is *the only sensible way* to develop software.
 
 - By writing tests first, you ensure testability
-  + It's typically hard to add tests later
+  + It's harder to add tests later
 
-- By writing tests first, you ensure loose coupling
-  + Tightly coupled code is hard to test. Writing the tests first precludes tight coupling
+- Writing tests first naturally leads to loose coupling
+  + Tightly coupled code is hard to test. Writing the tests first
+    drives you to loose coupling
 
 ## A simple action plan
 
@@ -99,24 +101,6 @@ The of the examples is to answer questions like:
 - How to write good tests?
 - How to rewrite bad tests to make them good?
 
-See the included Java project (testing-java, import with Maven).
+See the included example projects:
 
-- [x] [The test case should make the causes and effects perfectly clear](testing-java/src/test/java/testing/examples/ClearCauseAndEffect)
-- [x] [Test cases should be simple](testing-java/src/test/java/testing/examples/Simple)
-- [x] [Test cases should be short](testing-java/src/test/java/testing/examples/Short)
-- [x] [Test cases should be fast](testing-java/src/test/java/testing/examples/Fast)
-- [x] [A test method should test one thing](testing-java/src/test/java/testing/examples/OneTestOneMethod)
-- [x] [Don't use numbering in test case names](testing-java/src/test/java/testing/examples/NoNumberedNaming)
-- [x] [Test cases should have descriptive names](testing-java/src/test/java/testing/examples/DescriptiveNaming)
-- [x] [Test cases should be easy to read and understand](testing-java/src/test/java/testing/examples/EasyToRead)
-- [x] [Test enough interesting cases](testing-java/src/test/java/testing/examples/NotEnoughTesting)
-- [x] [No need to test trivial things](testing-java/src/test/java/testing/examples/NoNeedForTrivial)
-- [x] [Remember to test invalid inputs](testing-java/src/test/java/testing/examples/ValidateInput)
-- [x] [Try to test all corner cases](testing-java/src/test/java/testing/examples/CornerCases)
-- [x] [DRY - don't repeat yourself!](testing-java/src/test/java/testing/examples/DRY)
-- [x] [Test expected exceptions](testing-java/src/test/java/testing/examples/ExpectedException)
-- [ ] [Test cases should not have side effects](testing-java/src/test/java/testing/examples/NoSideEffects)
-- [x] [Test cases should not rely on external data](testing-java/src/test/java/testing/examples/NoExternalData)
-- [x] [Test cases should not rely on the local filesystem](testing-java/src/test/java/testing/examples/NoLocalData)
-- [x] [Test cases should not have loops or complex logic](testing-java/src/test/java/testing/examples/NoLooping)
-- [x] [Don't print in test cases](testing-java/src/test/java/testing/examples/NoPrinting)
+- [testing-java](testing-java)

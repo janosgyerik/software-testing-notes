@@ -1,7 +1,6 @@
 package testing.examples.NoNeedForTrivial;
 
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

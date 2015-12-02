@@ -1,7 +1,6 @@
 package testing.examples.NoLocalData;
 
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import java.util.Scanner;
 

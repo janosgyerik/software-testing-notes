@@ -1,9 +1,7 @@
 package testing.examples.ExpectedException;
 
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
-import static org.junit.Assert.assertEquals;
 import static testing.common.ExcelSheetUtils.titleToNumber;
 
 public class GoodTest {

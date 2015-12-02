@@ -2,7 +2,6 @@ package testing.examples.NoPrinting;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import static testing.common.ExcelSheetUtils.titleToNumber;
 

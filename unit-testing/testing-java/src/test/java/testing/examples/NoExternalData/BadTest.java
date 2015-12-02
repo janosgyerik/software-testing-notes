@@ -2,7 +2,6 @@ package testing.examples.NoExternalData;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import testing.common.ExcelSheetUtils;
 
 import java.util.Scanner;
 

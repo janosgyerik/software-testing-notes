@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <jdbc:embedded-database id="dataSource" type="H2">
+        <jdbc:script location="classpath:testing/db/sql/create-db.sql"/>
+        <jdbc:script location="classpath:testing/db/sql/insert-data.sql"/>
+    </jdbc:embedded-database>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+</beans>

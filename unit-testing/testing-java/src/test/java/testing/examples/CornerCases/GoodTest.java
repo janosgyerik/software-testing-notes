@@ -25,47 +25,47 @@ public class GoodTest {
     }
 
     @Test
-    public void test_a() {
+    public void test_A_gives_1() {
         assertEquals(1, titleToNumber("A"));
     }
 
     @Test
-    public void test_z() {
+    public void test_Z_gives_26() {
         assertEquals(26, titleToNumber("Z"));
     }
 
     @Test
-    public void test_aa() {
+    public void test_AA_gives_27() {
         assertEquals(26 + 1, titleToNumber("AA"));
     }
 
     @Test
-    public void test_az() {
+    public void test_AZ_gives_52() {
         assertEquals(26 + 26, titleToNumber("AZ"));
     }
 
     @Test
-    public void test_ba() {
+    public void test_BA_gives_53() {
         assertEquals(26 + 26 + 1, titleToNumber("BA"));
     }
 
     @Test
-    public void test_bz() {
+    public void test_BZ_gives_78() {
         assertEquals(26 + 26 + 26, titleToNumber("BZ"));
     }
 
     @Test
-    public void test_ca() {
+    public void test_CA_gives_79() {
         assertEquals(26 + 26 + 26 + 1, titleToNumber("CA"));
     }
 
     @Test
-    public void test_zzzzzz() {
+    public void test_ZZZZZZ() {
         assertEquals(321272406, titleToNumber("ZZZZZZ"));
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void test_zzzzzzz_overflows() {
+    public void test_ZZZZZZZ_overflows() {
         titleToNumber("ZZZZZZZ");
     }
 }
